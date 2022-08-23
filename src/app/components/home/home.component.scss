@@ -46,13 +46,13 @@
   height: 330px;
   overflow: hidden;
   border-radius: 5px;
-  background-color: #202020;
-  box-shadow: 4px 3px 8px 0px rgb(200 152 44 / 22%);
+  background-color: #2e2a2a;
+  box-shadow: 4px 4px 8px 0px rgba(241, 127, 21, 0.22);
   transition-duration: 0.3s;
   cursor: pointer;
 
   &:hover {
-    box-shadow: 4px 3px 11px 6px rgb(200 152 44 / 46%);
+    box-shadow: 4px 4px 11px 6px #eea47fff;
     transform: translateY(-3px);
   }
 
