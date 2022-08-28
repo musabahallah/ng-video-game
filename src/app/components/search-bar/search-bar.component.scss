@@ -54,3 +54,16 @@
   cursor: pointer;
   text-decoration: none;
 }
+
+@media (max-width: 767px) {
+  .search-box {
+    margin-left: 20px;
+    padding: 10px;
+    width: 112px;
+    text-align: center;
+  }
+
+  .search-form {
+    text-align: center;
+  }
+}

@@ -11,13 +11,17 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { HttpHeadersInterceptor } from './interceptors/http-headers.interceptor';
 import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
+import { GameDetailsComponent } from './components/game-details/game-details.component';
+import { GameTabsComponent } from './components/game-tabs/game-tabs.component';
 
 @NgModule({
-  declarations: [AppComponent, SearchBarComponent, HomeComponent],
+  declarations: [AppComponent, SearchBarComponent, HomeComponent, GameDetailsComponent, GameTabsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,6 +33,7 @@ import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
     MatIconModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatPaginatorModule,
   ],
   providers: [
     {
