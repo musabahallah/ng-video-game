@@ -36,9 +36,9 @@
     <mat-tab label="Screenshots" *ngIf="game?.screenshots?.length">
       <img
         class="game-screenshot"
-        *ngFor="let screenshot of game?.screenshots"
-        src="{{ screenshot.image }}"
-        alt="screenshot"
+        *ngFor="let screenShot of game?.screenshots"
+        src="{{ screenShot.image }}"
+        alt="screenShots"
       />
     </mat-tab>
     <mat-tab label="Trailers" *ngIf="game?.trailers?.length">
