@@ -49,6 +49,7 @@
     &-img {
       width: 100%;
       filter: blur(5px);
+      filter: brightness(50%);
     }
   }
 
@@ -76,5 +77,50 @@
       color: #fff;
       font-weight: 700;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .game {
+    &-banner {
+      height: auto;
+
+      &-img {
+        width: 100%;
+        filter: blur(5px);
+      }
+    }
+
+    &-content {
+      text-align: center;
+      position: relative;
+    }
+
+    &-header {
+      &-title {
+        font-size: 20px;
+      }
+
+      &-release-date {
+        color: #fff;
+        font-size: 17px;
+        font-weight: 500;
+      }
+    }
+  }
+  .details {
+    .game-gauge {
+      display: none;
+
+      // &-label {
+      // }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .filters {
+    margin-top: 40px;
+    text-align: center;
   }
 }
