@@ -24,9 +24,9 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.routSub = this.activatedRoute.params.subscribe((params: Params) => {
       if (params['game-search']) {
-        this.searchGames('metacrit', params['game-search']);
+        this.searchGames('sort', params['game-search']);
       } else {
-        this.searchGames('metacrit');
+        this.searchGames('sort');
       }
     });
   }
@@ -36,7 +36,6 @@ export class HomeComponent implements OnInit, OnDestroy {
       .getGameList(sort, search)
       .subscribe((gameList: APIResponse<Game>) => {
         this.games = gameList.results;
-        console.log(gameList);
       });
   }
 

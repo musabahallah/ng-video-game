@@ -52,12 +52,12 @@
   cursor: pointer;
 
   &:hover {
-    box-shadow: 4px 4px 11px 6px #eea47fff;
+    box-shadow: 4px 4px 11px 6px #ac5e5e;
     transform: translateY(-3px);
   }
 
   &-thumb-container {
-    background-color: #000;
+    background-color: rgb(48, 39, 39);
     position: relative;
     height: 172px;
     color: #fff;
@@ -98,5 +98,19 @@
   &-platform {
     width: 20px;
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .filters {
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .filters {
+    margin-top: 40px;
+    text-align: start;
   }
 }

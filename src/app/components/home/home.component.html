@@ -27,11 +27,12 @@
           alt="thumbnail"
           class="game-thumbnail"
         />
-        <p *ngIf="!game.background_image">No Image Found</p>
-        <!-- <img
+        <!-- <p *ngIf="!game.background_image">No Image Found</p> -->
+        <img
           *ngIf="!game.background_image"
           src="../../../assets/no-image.jpg"
-        /> -->
+          class="game-thumbnail"
+        />
       </div>
       <div class="game-description">
         <p class="game-name">{{ game.name }}</p>
